@@ -13,9 +13,6 @@ export default function NotifyAlert({ open, message, onClose,}:NotifyAlertProps)
             <h5 className="modal-title">{message}</h5>
             <button type="button" className="btn-close" aria-label="Close" onClick={onClose}></button>
           </div>
-          <div className="modal-footer">
-            <button type="button" className="btn " onClick={onClose}>Okay</button>
-          </div>
         </div>
       </div>
     </div>
