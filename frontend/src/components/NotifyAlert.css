@@ -1,0 +1,10 @@
+.modal-content{
+    background-color: #000000 !important;
+    border: 1px solid #ffffffc2;
+}
+.modal-header,.modal-footer{
+    border: none;
+}
+.btn-close{
+    background-color: red !important;
+}

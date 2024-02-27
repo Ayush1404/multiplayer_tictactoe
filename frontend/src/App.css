@@ -1,0 +1,107 @@
+body{
+  background-color: #000000;
+  color: #ffffffc2;
+}
+/* Initial screen styles*/
+.initial_screen input{
+  background-color: inherit;
+  color: inherit;
+  border: #999999 0.5px solid;
+}
+.initial_screen input:focus{
+  background-color: inherit;
+  color: inherit;
+  border: #999999 1px solid;
+  box-shadow: none;
+}
+.initial_screen input::placeholder{
+  color: #ffffff7e;
+}
+.initial_screen button{
+  margin-left: 2rem;
+  background-color: #555555;
+  color: inherit;
+}
+.initial_screen button:hover{
+  background-color: #333333;
+  color: inherit;
+}
+.initial_screen img{
+  opacity: 65%;
+  max-width: 100%;
+  min-height: 40vh;
+}
+/* set challenge screen styles*/
+
+.set_challenge_screen input{
+  background-color: inherit;
+  color: inherit;
+  border: #999999 0.5px solid;
+}
+.set_challenge_screen input:focus{
+  background-color: inherit;
+  color: inherit;
+  border: #999999 1px solid;
+  box-shadow: none;
+}
+.set_challenge_screen input::placeholder{
+  color: #ffffff7e;
+}
+.set_challenge_screen button{
+  margin-left: 2rem;
+  background-color: #555555;
+  color: inherit;
+}
+.set_challenge_screen button:hover{
+  background-color: #333333;
+  color: inherit;
+}
+.set_challenge_screen img{
+  opacity: 65%;
+  max-width: 100%;
+  min-height: 40vh;
+}
+
+/* in game screen styles*/
+.chatbox{
+  display: flex;
+  color:white;
+  justify-content: left;
+}
+.in_game_screen .card{
+  background-color: #000000;
+}
+.in_game_screen .card input{
+  background-color: inherit;
+  color: #ffffffc2;;
+  border: #999999 0.5px solid;
+}
+.in_game_screen .card input:focus{
+  border: #999999 1px solid;
+  box-shadow: none;
+}
+.in_game_screen .card input::placeholder{
+  color: #ffffff7e;
+}
+.in_game_screen button{
+  margin-left: 2rem;
+  background-color: #555555;
+  color: #ffffffc2;
+}
+.in_game_screen button:hover{
+  background-color: #333333;
+  color: #ffffffc2;
+}
+/* Large screen styles*/
+@media only screen and (min-width: 992px) {
+    /* Initial screen styles*/
+  .initial_screen img{
+    max-width: 800%;
+    height: 50vh;
+  }
+    /* set challenge screen styles*/
+    .set_challenge_screen img{
+      max-width: 800%;
+      height: 50vh;
+    }
+}
