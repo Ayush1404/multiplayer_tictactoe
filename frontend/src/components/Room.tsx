@@ -37,7 +37,7 @@ const Room = ({userName,socket,setNotifyAlertOpen,setNotifyMessage}:roomProps) =
         {
             socket.emit("challenge",{opponentName})
             setOpponentName("")
-            setNotifyMessage("rematch Challenge has been sent")
+            setNotifyMessage("Challenge has been sent")
             setNotifyAlertOpen(true)
             console.log("Challenge has been sent")
         }
