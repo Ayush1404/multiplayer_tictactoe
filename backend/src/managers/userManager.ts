@@ -64,6 +64,13 @@ export class UserManager{
             console.log(opponentName)
             const challenger = this.users.find((user)=>user.socket.id===socket.id);
             if(!challenger) return;
+            if(challenger.name===opponentName){
+                socket.emit('challenge-responce',{
+                    success:false,
+                    message:`You can't challenge yourself`
+                })
+                return;
+            }
             const opponent = this.users.find((user)=>user.name===opponentName);
             if(!opponent){
                 socket.emit('challenge-responce',{

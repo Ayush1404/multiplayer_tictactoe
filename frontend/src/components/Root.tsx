@@ -58,6 +58,7 @@ const Root = () => {
     return (
       <div className="initial_screen">
         <NotifyAlert
+                setNotifyAlertOpen={setNotifyAlertOpen}
                 message={notifyMessage}
                 open={notifyAlertOpen}
                 onClose={closeNotifyAlert}
@@ -90,6 +91,7 @@ const Root = () => {
   return (
     <div>
       <NotifyAlert
+                setNotifyAlertOpen={setNotifyAlertOpen}
                 message={notifyMessage}
                 open={notifyAlertOpen}
                 onClose={closeNotifyAlert}
