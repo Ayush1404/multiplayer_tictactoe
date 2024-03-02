@@ -216,7 +216,7 @@ const Room = ({userName,socket,setNotifyAlertOpen,setNotifyMessage}:roomProps) =
                         <Board onMove={onMove} board={board}></Board> 
                         
                         {winner==='D' && <p>Game is a draw</p>}
-                        {(winner==='X' || winner=='O') && <p>{winner} won</p>}
+                        {(winner==='X' || winner=='O') && <p>{winner===mySign ? userName : opponentName} won</p>}
                         {winner!==null && 
                             <div>
                                 <button className="btn" onClick={() => goBack()}>
